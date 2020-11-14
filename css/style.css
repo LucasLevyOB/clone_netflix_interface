@@ -1,0 +1,239 @@
+/* root */
+:root {
+    --red: #E50914;
+    --black: #101010;
+    --black-1: #141414;
+    --gray: #909090;
+    --white: #ffffff;
+}
+/* root end */
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    height: auto;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+/* reset end */
+/* generic classes */
+.button-sign:hover {
+    opacity: .9;
+}
+.button-sign {
+    padding-bottom: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 2px;
+    padding:.5rem 1.5rem;
+    color: var(--white);
+    border: none;
+    background-color: var(--red);
+}
+.message {
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.pop-sign {
+    background-image: linear-gradient(to right, #252525, var(--black-1));
+    justify-content: space-between;
+    margin: 0 4rem;
+    width: calc(100% - 8rem);
+    padding: .7rem 2rem;
+    background-color: var(--black-1);
+    z-index: 10;
+    bottom: -7%;
+    position: absolute;
+}
+.info-talent {
+    margin-bottom: 1rem;
+}
+.margin-b-4r {
+    margin-bottom: 4rem;
+}
+.span-age {
+    padding: .5px 2px;
+    border: 1px solid var(--gray);
+}
+.span-talent {
+    color: var(--gray);
+    font-size: 16px;
+}
+.span-data {
+    font-size: 14px;
+}
+.vertical-divider {
+    margin: 0 9px;
+    border: none;
+    border-left: 1px solid var(--gray);
+}
+.button > i {
+    margin-right: 7px;
+}
+.button:hover {
+    color: var(--black);
+    background-color: var(--white);
+    transition: .5s ease all;
+}
+.button {
+    width: 210px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    color: var(--white);
+    background-color: var(--black-1);
+    padding: 15px 30px;
+}
+.w-100 {
+    width: 100%;
+}
+.y-end {
+    align-items: flex-end;
+}
+.y-center {
+    align-items: center;
+}
+.x-end {
+    justify-content: flex-end;
+}
+.x-center {
+    justify-content: center;
+}
+.collumn {
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+.d-flex {
+    flex-wrap: wrap;
+    display: flex;
+}
+.container {
+    width: 100%;
+}
+/* generic classes end */
+main.container {
+    width: 100%;
+}
+/* main */
+.films-carousel {
+    margin-top: 3rem;
+    padding: 10px 2px;
+    height: auto;
+    width: 100%;
+}
+.informations > div.metadata {
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+.informations > h1.title {
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+.informations > p.description {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+main.container > header.main-info{
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    max-width: 500px;
+    width: 100%;
+}
+main#banner {
+    position: relative;
+    background-color: var(--black);
+    box-shadow: 590px 0px 110px -70px rgba(14, 14, 14, .7) inset;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/housecards.jpg');
+}
+/* main end */
+/* header */
+.navigation ul li a:hover { 
+    color: var(--white);
+}
+.navigation ul li a {
+    color: var(--gray);
+    transition-duration: .5s;
+}
+.navigation ul li {
+    margin-left: 1rem;
+    display: inline-block;
+}
+.navigation ul {
+    height: 2rem;
+}
+.navigation {
+    padding: 0 1rem 0 1rem;
+    width: 75%;
+}
+.logo > img {
+    max-width: 9rem;
+}
+.logo {
+    padding-left: 1rem;
+    width: 25%;
+}
+header#header {
+    background-color: var(--black-1);
+    min-height: 45px;
+    height: auto;
+}
+/* header end */
+body {
+    background-color: var(--black);
+    font-family: 'Arial', Times, serif;
+    color: var(--white);
+}
+
+/* medias */
+@media(max-width: 448px) {
+    .pop-sign {
+        bottom: -10%;
+        justify-content: center;
+    }
+}
+@media(max-width: 600px) {
+    .pop-sign {
+        bottom: -9%;
+        margin: 0 10px;
+        width: calc(100% - 20px);
+    }
+    main#banner {
+        background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+    main.container > header.main-info {
+        padding: 1rem .5rem 2rem .5rem;
+    }
+    .button {
+        width: 300px;
+    }
+    main#banner {
+        min-height: 90vh;
+    }
+    main.container > header.main-info {
+        width: 100%;
+    }
+    .logo {
+        justify-content: center;
+        width: 100%;
+    }
+    .navigation {
+        justify-content: center;
+        width: 100%;
+    }
+}
+/* medias end */
